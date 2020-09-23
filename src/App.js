@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// https://medium.com/@celiaongsl/tutorial-how-to-create-a-waterfall-chart-in-recharts-15a0e980d4b?source=friends_link&sk=a1f0bd8f401d79ad9d4b6aae2b412b67
+// If you need a tutorial, please view my post above, it'll help you and me out a lot :)!
 
-function App() {
+import React from "react";
+import "./styles.css";
+import Waterfall from "./Waterfall";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <h1>The Waterfall Chart</h1>
+      <div className="Waterfall">
+      <Waterfall />
+      </div>
     </div>
   );
 }
-
-export default App;
